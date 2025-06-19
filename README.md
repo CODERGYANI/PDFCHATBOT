@@ -41,11 +41,7 @@ project/
 ├─ requirements.txt # Dependencies
 └─ README.md
 
-yaml
-Copy
-Edit
 
----
 
 ## Setup Instructions
 
