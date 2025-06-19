@@ -49,9 +49,7 @@ project/
 git clone https://github.com/yourusername/PDFCHATBOT.git
 cd PDFCHATBOT
 
-shell
-Copy
-Edit
+
 
 ### 2. Create virtual environment and install requirements
 python -m venv venv
@@ -60,9 +58,7 @@ venv\Scripts\activate # Windows
 or source venv/bin/activate # MacOS/Linux
 pip install -r requirements.txt
 
-yaml
-Copy
-Edit
+
 
 ### 3. Install Poppler and Tesseract
 Download and add these to your PATH:
@@ -77,16 +73,12 @@ Download and add these to your PATH:
 Add PDFs to `documents/` and then run:
 python -c "from pdf_processor import load_vectorstore; load_vectorstore()"
 
-shell
-Copy
-Edit
+
 
 ### 2. Run the server
 uvicorn main:app --reload
 
-yaml
-Copy
-Edit
+
 
 ### 3. Test the API
 - Upload new PDFs at `/pdf/upload-pdf`
