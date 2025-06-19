@@ -13,7 +13,7 @@ function Upload() {
       return;
     }
 
-    // Check if file is PDF
+    // Checking if file is PDF
     if (file.type !== 'application/pdf') {
       setStatus('❌ Please select a PDF file');
       setTimeout(() => setStatus(''), 3000);
