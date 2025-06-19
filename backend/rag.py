@@ -10,11 +10,11 @@ def get_qa_chain():
     db = FAISS.load_local("vectorstore", embedding, allow_dangerous_deserialization=True)
     retriever = db.as_retriever(search_kwargs={"k": 5})
 
-    # Load LLM (Flan-T5)
+    # Loading my model
     hf_pipeline = pipeline("text2text-generation", model="google/flan-t5-large")
     llm = HuggingFacePipeline(pipeline=hf_pipeline)
 
-    # Simple RetrievalQA chain
+    #  RetrievalQA chain
     qa = RetrievalQA.from_chain_type(
         llm=llm,
         retriever=retriever,
