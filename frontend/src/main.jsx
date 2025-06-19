@@ -6,12 +6,13 @@ import Login from "./components/Login"
 import Register from "./components/Register"
 import Chat from "./components/chat"
 import History from "./components/History"
-import "./index.css"
 import Upload from "./components/Upload"
+import "./index.css"
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* 👇 Set basename for GitHub Pages */}
+    <BrowserRouter basename="/PDFCHATBOT">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/login" element={<Login />} />
@@ -21,5 +22,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/upload" element={<Upload />} />
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
