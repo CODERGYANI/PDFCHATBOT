@@ -81,8 +81,8 @@ uvicorn main:app --reload
 
 
 ### 3. Test the API
-- Upload new PDFs at `/pdf/upload-pdf`
-- Ask questions at `/chat/ask`
+- Upload new PDFs at `/documents/Upload`
+- Ask questions at `/chat`
 - View history at `/chat/history?user_id=1`
 
 ---
