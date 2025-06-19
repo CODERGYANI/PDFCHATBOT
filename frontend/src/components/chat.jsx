@@ -13,7 +13,7 @@ function Chat() {
 
   const user_id = localStorage.getItem('user_id');
 
-  // Fetch chat history on load
+  
   useEffect(() => {
     const fetchHistory = async () => {
       if (!user_id) return;
@@ -29,7 +29,7 @@ function Chat() {
     fetchHistory();
   }, [user_id]);
 
-  // Scroll to bottom on new selection
+  
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [selectedConversation]);
