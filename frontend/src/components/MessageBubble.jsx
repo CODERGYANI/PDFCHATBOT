@@ -39,7 +39,7 @@ function MessageBubble({ msg }) {
         <div className="bubble-content">
           <div className="bot-header">
             <div className="bot-avatar">🤖</div>
-            <div className="bot-name">DeepSoul Assistant</div>
+            <div className="bot-name">YourAI Assistant</div>
           </div>
 
           <div className="bot-content">
